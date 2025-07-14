@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>نموذج التبليغ عن الحوادث الأمنية</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('logo.png') no-repeat center center fixed;
+      background-size: contain;
+      background-attachment: fixed;
+      background-color: #f9f9f9;
+      direction: rtl;
+    }
+    .overlay {
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(255,255,255,0.85);
+      z-index: 0;
+    }
+    .container {
+      position: relative; z-index: 1;
+      background-color: rgba(255,255,255,0.95);
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    label {
+      color: #000;
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+    button {
+      background-color: #2e7d32;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #27652a;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>نموذج التبليغ عن الحوادث الأمنية</h1>
+    <form action="success.html" method="post">
+      <label for="employeeName">اسم الموظف:</label>
+      <input type="text" id="employeeName" name="employeeName" required>
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="incidentType">نوع الحادث:</label>
+      <select id="incidentType" name="incidentType" required>
+        <option value="">-- اختر --</option>
+        <option value="phishing">تصيد إلكتروني</option>
+        <option value="data-loss">فقد بيانات</option>
+        <option value="unauthorized-access">دخول غير مصرح</option>
+        <option value="other">أخرى</option>
+      </select>
+      <label for="incidentDesc">وصف الحادث:</label>
+      <textarea id="incidentDesc" name="incidentDesc" required></textarea>
+      <button type="submit">إرسال البلاغ</button>
+    </form>
+  </div>
+</body>
+</html>
