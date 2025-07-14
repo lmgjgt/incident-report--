@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>تم إرسال البلاغ</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('logo.png') no-repeat center center fixed;
+      background-size: contain;
+      background-attachment: fixed;
+      background-color: #f9f9f9;
+      direction: rtl;
+    }
+    .overlay {
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(255,255,255,0.85);
+      z-index: 0;
+    }
+    .container {
+      position: relative; z-index: 1;
+      background-color: rgba(255,255,255,0.95);
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 40px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h2>تم استلام البلاغ بنجاح</h2>
+    <p>شكرًا لتعاونك معنا، سيتم التعامل مع البلاغ بسرية تامة.</p>
+  </div>
+</body>
+</html>
