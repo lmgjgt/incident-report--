@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>بوابة التبليغ عن الحوادث الأمنية</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('logo.png') no-repeat center center fixed;
+      background-size: contain;
+      background-attachment: fixed;
+      background-color: #f9f9f9;
+      direction: rtl;
+    }
+    .overlay {
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(255,255,255,0.85);
+      z-index: 0;
+    }
+    .container {
+      position: relative; z-index: 1;
+      max-width: 700px;
+      margin: 100px auto;
+      background-color: rgba(255,255,255,0.95);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #27652a;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>مرحبا بكم في بوابة التبليغ عن الحوادث الأمنية</h1>
+    <p>يمكنك تقديم بلاغ جديد بكل سهولة وسرية تامة من خلال البوابة.</p>
+    <a href="report.html" class="btn">تقديم بلاغ جديد</a>
+  </div>
+</body>
+</html>
